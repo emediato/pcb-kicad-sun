@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32_mini:mini_esp32 U3
+U 1 1 607E1AED
+P 6100 1050
+F 0 "U3" H 6125 1175 50  0000 C CNN
+F 1 "mini_esp32" H 6125 1084 50  0000 C CNN
+F 2 "ESP32_mini:ESP32_mini" H 6250 1150 50  0001 C CNN
+F 3 "" H 6250 1150 50  0001 C CNN
+	1    6100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3700 2300 3350
+$Comp
+L power:GND #PWR07
+U 1 1 607E9019
+P 7000 1600
+F 0 "#PWR07" H 7000 1350 50  0001 C CNN
+F 1 "GND" H 7005 1427 50  0000 C CNN
+F 2 "" H 7000 1600 50  0001 C CNN
+F 3 "" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1550 7000 1550
+Wire Wire Line
+	7000 1550 7000 1600
+Connection ~ 2300 3350
+Wire Wire Line
+	2300 3350 2300 3300
+Wire Wire Line
+	1850 2950 1850 3350
+Wire Wire Line
+	1850 3350 2300 3350
+$Comp
+L Buck:LM2596HVS U1
+U 1 1 60776558
+P 2300 3250
+F 0 "U1" H 2325 3975 50  0000 C CNN
+F 1 "LM2596HVS" H 2325 3884 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 1950 3950 50  0001 C CIN
+F 3 "" H 2300 3250 50  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1450 7000 1450
+Wire Wire Line
+	7000 1450 7000 1550
+Connection ~ 7000 1550
+Wire Wire Line
+	6650 1350 7000 1350
+Wire Wire Line
+	7000 1350 7000 1450
+Connection ~ 7000 1450
+NoConn ~ 6650 2750
+NoConn ~ 6650 2650
+NoConn ~ 6650 2600
+NoConn ~ 6650 2500
+NoConn ~ 6650 2550
+NoConn ~ 6650 2450
+NoConn ~ 6650 2400
+NoConn ~ 6650 2350
+NoConn ~ 6650 2300
+NoConn ~ 6650 2250
+NoConn ~ 6650 2150
+NoConn ~ 6650 1900
+NoConn ~ 6650 1850
+NoConn ~ 6650 1650
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6080E9BF
+P 1100 1400
+F 0 "BT1" H 1218 1496 50  0000 L CNN
+F 1 "40.8V" H 1218 1405 50  0000 L CNN
+F 2 "Battery:Battery_Panasonic_CR1025-VSK_Vertical_CircularHoles" V 1100 1460 50  0001 C CNN
+F 3 "~" V 1100 1460 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1200 1100 1100
+Wire Wire Line
+	1100 1100 1700 1100
+Wire Wire Line
+	1100 1500 1100 1700
+Wire Wire Line
+	1100 1700 1700 1700
+Wire Wire Line
+	2800 2950 2800 3350
+Text Label 1400 1100 1    50   ~ 0
+INPUT
+Text Label 1400 1700 3    50   ~ 0
+INPUT_GND
+Text Label 2300 3300 0    50   ~ 0
+3toGND
+Text Label 2800 3300 1    50   ~ 0
+5toGND
+Text Label 3000 2750 1    50   ~ 0
+OUTPUTtoVI
+Text Label 5500 800  0    50   ~ 0
+ESP32mini
+Text GLabel 4550 1250 0    50   Input ~ 0
+VDD5
+Text Label 1350 800  0    50   ~ 0
+POWER
+Text Label 1250 2400 0    50   ~ 0
+Buck
+NoConn ~ 5600 3550
+NoConn ~ 5600 3350
+NoConn ~ 5600 3250
+NoConn ~ 5600 2950
+NoConn ~ 5600 2650
+NoConn ~ 5600 2550
+NoConn ~ 5600 2450
+NoConn ~ 5600 2350
+NoConn ~ 5600 2250
+NoConn ~ 5600 1950
+NoConn ~ 5600 1850
+NoConn ~ 5600 1750
+NoConn ~ 5600 1650
+NoConn ~ 5600 1550
+NoConn ~ 5600 1450
+NoConn ~ 5600 1350
+NoConn ~ 5600 1150
+Wire Wire Line
+	1700 1700 1700 1100
+$Comp
+L power:GND #PWR01
+U 1 1 6090D592
+P 1700 1700
+F 0 "#PWR01" H 1700 1450 50  0001 C CNN
+F 1 "GND" H 1705 1527 50  0000 C CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 1700
+$Comp
+L power:GND #PWR0101
+U 1 1 60942BAD
+P 7500 1550
+F 0 "#PWR0101" H 7500 1300 50  0001 C CNN
+F 1 "GND" H 7505 1377 50  0000 C CNN
+F 2 "" H 7500 1550 50  0001 C CNN
+F 3 "" H 7500 1550 50  0001 C CNN
+	1    7500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60942BB3
+P 7500 1400
+F 0 "C6" H 7615 1446 50  0000 L CNN
+F 1 "0.1uF" H 7615 1355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 7538 1250 50  0001 C CNN
+F 3 "~" H 7500 1400 50  0001 C CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1250 7500 1250
+Text Label 7000 1600 0    50   ~ 0
+GND
+Text Label 7500 1550 0    50   ~ 0
+GND
+Text GLabel 1350 2750 0    50   Input ~ 0
+VDD41
+Text GLabel 1700 1100 2    50   Input ~ 0
+VDD41
+$Comp
+L Sensor_Temperature:DS18B20 U2
+U 1 1 6092ADC9
+P 1450 4800
+F 0 "U2" H 1220 4846 50  0000 R CNN
+F 1 "DS18B20" H 1220 4755 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 450 4550 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 1300 5050 50  0001 C CNN
+	1    1450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2750 1850 2750
+$Comp
+L Device:R R1
+U 1 1 6094D912
+P 2050 5100
+F 0 "R1" H 2120 5146 50  0000 L CNN
+F 1 "4.7k" H 2120 5055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1980 5100 50  0001 C CNN
+F 3 "~" H 2050 5100 50  0001 C CNN
+	1    2050 5100
+	1    0    0    -1  
+$EndComp
+Text Label 1150 4150 0    50   ~ 0
+TemperatureSensor
+Wire Wire Line
+	2300 3350 2800 3350
+Wire Wire Line
+	1750 4800 2050 4800
+Wire Wire Line
+	2050 4800 2050 4950
+Text GLabel 7000 1350 2    50   Input ~ 0
+GND
+Text GLabel 2300 3700 3    50   Input ~ 0
+GND
+Text GLabel 1450 5450 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1450 5100 1450 5450
+Wire Wire Line
+	2050 5450 2050 5250
+Text Label 1450 5250 0    50   ~ 0
+1toGND
+Text Label 2050 5350 2    50   ~ 0
+RtoVDD33
+Text Label 1750 4800 0    50   ~ 0
+2toESP
+Text Label 1850 3300 1    50   ~ 0
+4toGND
+Text Label 1550 2750 1    50   ~ 0
+VDDto1
+Text GLabel 7950 1250 2    50   Input ~ 0
+VDD33
+Text GLabel 2050 5450 3    50   Input ~ 0
+VDD33
+Text GLabel 2050 4800 2    50   Input ~ 0
+DQA0
+NoConn ~ 5600 2850
+$Comp
+L power:GND #PWR0104
+U 1 1 60940989
+P 7950 1550
+F 0 "#PWR0104" H 7950 1300 50  0001 C CNN
+F 1 "GND" H 7955 1377 50  0000 C CNN
+F 2 "" H 7950 1550 50  0001 C CNN
+F 3 "" H 7950 1550 50  0001 C CNN
+	1    7950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 6094098F
+P 7950 1400
+F 0 "C3" H 8068 1446 50  0000 L CNN
+F 1 "22uF" H 8068 1355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7988 1250 50  0001 C CNN
+F 3 "~" H 7950 1400 50  0001 C CNN
+	1    7950 1400
+	1    0    0    -1  
+$EndComp
+Text Label 7950 1550 0    50   ~ 0
+GND
+Wire Wire Line
+	7500 1250 7950 1250
+Connection ~ 7500 1250
+Text Label 7050 1250 1    50   ~ 0
+16toC
+Text Label 7750 1250 1    50   ~ 0
+VDD33toC
+Wire Wire Line
+	5400 3450 5600 3450
+Text GLabel 5400 3450 0    50   Input ~ 0
+DQA0
+Text Label 2050 4950 0    50   ~ 0
+DQtoR
+Text GLabel 1450 4500 1    50   Input ~ 0
+VDD33
+Text Label 4300 4300 0    50   ~ 0
+VoltageDivider
+Text GLabel 4400 4650 0    50   Input ~ 0
+VDD5
+Wire Wire Line
+	4400 5450 5050 5450
+Wire Wire Line
+	5050 5450 5050 5350
+Wire Wire Line
+	5050 4450 4400 4450
+Wire Wire Line
+	4400 4450 4400 5450
+$Comp
+L Device:R R2
+U 1 1 609485CD
+P 5050 4700
+F 0 "R2" H 5120 4746 50  0000 L CNN
+F 1 "1000" H 5120 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 4700 50  0001 C CNN
+F 3 "~" H 5050 4700 50  0001 C CNN
+	1    5050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60948C85
+P 5050 5200
+F 0 "R3" H 5120 5246 50  0000 L CNN
+F 1 "2000" H 5120 5155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 5200 50  0001 C CNN
+F 3 "~" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 609491C1
+P 5050 5450
+F 0 "#PWR0105" H 5050 5200 50  0001 C CNN
+F 1 "GND" H 5055 5277 50  0000 C CNN
+F 2 "" H 5050 5450 50  0001 C CNN
+F 3 "" H 5050 5450 50  0001 C CNN
+	1    5050 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5450
+Text GLabel 5050 5000 2    50   Input ~ 0
+VDD33
+Text Label 5250 1250 1    50   ~ 0
+VDD5toDivider
+Text Label 4750 1250 1    50   ~ 0
+VDD5toC
+Wire Wire Line
+	2800 2750 3200 2750
+Text GLabel 3200 2750 2    50   Input ~ 0
+VDD5
+Wire Wire Line
+	4900 1250 4550 1250
+Wire Wire Line
+	5600 1250 4900 1250
+Connection ~ 4900 1250
+$Comp
+L power:GND #PWR0102
+U 1 1 60956816
+P 4650 1600
+F 0 "#PWR0102" H 4650 1350 50  0001 C CNN
+F 1 "GND" H 4655 1427 50  0000 C CNN
+F 2 "" H 4650 1600 50  0001 C CNN
+F 3 "" H 4650 1600 50  0001 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6095681C
+P 4650 1450
+F 0 "C1" H 4765 1496 50  0000 L CNN
+F 1 "100uF" H 4765 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 4688 1300 50  0001 C CNN
+F 3 "~" H 4650 1450 50  0001 C CNN
+	1    4650 1450
+	1    0    0    -1  
+$EndComp
+Text Label 4650 1600 0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR0103
+U 1 1 60956823
+P 5100 1600
+F 0 "#PWR0103" H 5100 1350 50  0001 C CNN
+F 1 "GND" H 5105 1427 50  0000 C CNN
+F 2 "" H 5100 1600 50  0001 C CNN
+F 3 "" H 5100 1600 50  0001 C CNN
+	1    5100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60956829
+P 5100 1450
+F 0 "C2" H 5215 1496 50  0000 L CNN
+F 1 "10uF" H 5215 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 5138 1300 50  0001 C CNN
+F 3 "~" H 5100 1450 50  0001 C CNN
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+Text Label 5100 1600 0    50   ~ 0
+GND
+Wire Wire Line
+	4900 1250 4900 1300
+Wire Wire Line
+	4900 1300 4650 1300
+Wire Wire Line
+	4900 1300 5100 1300
+Connection ~ 4900 1300
+Text Label 5050 4950 2    50   ~ 0
+VDD5toVDD33
+Wire Wire Line
+	5050 4850 5050 5050
+Text Label 4550 4450 0    50   ~ 0
+VDD5toR1
+Text Label 4550 5450 0    50   ~ 0
+VDD5toR2
+Wire Wire Line
+	5050 4550 5050 4450
+NoConn ~ 5600 2050
+NoConn ~ 5600 2750
+Text Label 5500 3450 1    50   ~ 0
+DStoESP
+$EndSCHEMATC
