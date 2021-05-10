@@ -8,5 +8,5 @@ Reference, Value, Footprint, Datasheet
 "C3","22uF","Capacitor_THT:CP_Radial_D8.0mm_P5.00mm","~"
 "R2","1000","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","~"
 "R3","2000","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","~"
-"C1","100uF","Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal","~"
 "C2","10uF","Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal","~"
+"C1","100uF","Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal","~"
