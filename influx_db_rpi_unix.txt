@@ -1,0 +1,5 @@
+sudo apt install influxdb
+sudo systemctl unmask influxdb
+sudo systemctl enable influxdb
+sudo systemctl start influxdb
+
