@@ -3,3 +3,25 @@ sudo systemctl unmask influxdb
 sudo systemctl enable influxdb
 sudo systemctl start influxdb
 
+
+https://pimylifeup.com/raspberry-pi-influxdb/
+
+
+echo "deb [signed-by=/usr/share/keyrings/influxdb-archive-keyring.gpg] https://repos.influxdata.com/debian stable main" | sudo tee /etc/apt/sources.list.d/influxdb.list
+deb [signed-by=/usr/share/keyrings/influxdb-archive-keyring.gpg] https://repos.influxdata.com/debian stable main
+
+
+
+sudo systemctl start influxdb
+influx
+CREATEDATABASE piTESLA
+USE piTESLA
+INSERT temperature,location=tesla1 value=20
+INSERT current,location=tesla2 value=3
+
+
+
+
+https://nodered.org/docs/getting-started/raspberrypi
+
+
