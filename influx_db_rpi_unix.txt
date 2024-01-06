@@ -24,4 +24,7 @@ INSERT current,location=tesla2 value=3
 
 https://nodered.org/docs/getting-started/raspberrypi
 
+to start node-red
 
+
+node-red
