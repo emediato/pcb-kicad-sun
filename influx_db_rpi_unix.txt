@@ -21,10 +21,60 @@ INSERT current,location=tesla2 value=3
 
 
 
+https://grafana.com/grafana/download?edition=oss
+user grafana pswd grafana
+grant all privileges on piTESLA to grafana
 
+sudo systemctl daemon-reload
+sudo systemctl start grafana-server
+sudo systemctl status grafana-server
+
+**************************************************************************************************************
+https://raspberrypi-guide.github.io/networking/set-up-static-ip-address
+https://help.domotz.com/tips-tricks/configure-vlans-on-raspberry-pi/
+sudo nano /etc/dhcpcd.conf
+
+**************************************************************************************************************
 https://nodered.org/docs/getting-started/raspberrypi
 
 to start node-red
-
-
 node-red
+
+
+
+**************************************************************************************************************
+check ports 
+sudo ss -ltnp
+
+mqqt
+user? tesla
+sudo mosquitto_passwd -c /etc/mosquitto/passwd
+
+sudo nmap localhost
+
+
+
+sudo nano /etc/mosquitto.conf
+
+*********************************
+per_listener_settings true
+
+pid_file /run/mosquitto/mosquitto.pid
+
+persistence true
+persistence_location /var/lib/mosquitto/
+log_dest file /var/log/mosquitto/mosquitto.log
+
+include_dir /etc/mosquitto/conf.d
+allow_anonymous false
+listener 1883 
+password_file /etc/mosquitto/passwd
+
+************************************
+
+sudo systemctl restart mosquitto
+sudo systemctl status mosquitto
+
+
+temp-mqtt
+current-mqtt
