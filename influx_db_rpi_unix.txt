@@ -29,6 +29,19 @@ sudo systemctl daemon-reload
 sudo systemctl start grafana-server
 sudo systemctl status grafana-server
 
+
+momo@raspberrypi:~ $ influx -database 'piTESLA' -host 192.168.0.18 -port '8086'
+Connected to http://192.168.0.18:8086 version 1.8.10
+InfluxDB shell version: 1.8.10
+> USE piTESLA
+Using database piTESLA
+> create user grafana with password 'grafana' with all privileges
+> grant all privileges on home to grafana
+ERR: database not found: home
+> grant all privileges on piTESLA to grafana
+> grant all privileges on piTESLA to grafana
+
+
 **************************************************************************************************************
 https://raspberrypi-guide.github.io/networking/set-up-static-ip-address
 https://help.domotz.com/tips-tricks/configure-vlans-on-raspberry-pi/
