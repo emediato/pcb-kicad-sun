@@ -20,6 +20,10 @@ INSERT temperature,location=tesla1 value=20
 INSERT current,location=tesla2 value=3
 
 
+grafana
+          tesla
+          tesla
+
 
 https://grafana.com/grafana/download?edition=oss
 user grafana pswd grafana
