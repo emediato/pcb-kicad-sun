@@ -5,7 +5,7 @@ sudo systemctl start influxdb
 
 
 https://pimylifeup.com/raspberry-pi-influxdb/
-
+https://www.seemoo.tu-darmstadt.de/team/mschulz/
 
 echo "deb [signed-by=/usr/share/keyrings/influxdb-archive-keyring.gpg] https://repos.influxdata.com/debian stable main" | sudo tee /etc/apt/sources.list.d/influxdb.list
 deb [signed-by=/usr/share/keyrings/influxdb-archive-keyring.gpg] https://repos.influxdata.com/debian stable main
